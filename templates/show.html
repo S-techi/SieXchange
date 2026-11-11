@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed pariatur sapiente mollitia quo exercitationem. Dolore ad sunt cumque quas recusandae animi laboriosam accusamus. Perferendis ex inventore molestiae deserunt, distinctio in?
+    Earum accusamus veniam esse rerum molestias vel laboriosam sit facilis assumenda culpa, velit explicabo temporibus quibusdam ipsa dolore quisquam nemo doloremque tempora similique! Magnam delectus optio fugit. Odio, eius tempora.</p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+        </tr>
+
+        {% for contact in all %}
+
+        <tr>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.subject }}</td>
+            <td>{{ contact.message }}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</body>
+</html>
